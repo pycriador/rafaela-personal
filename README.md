@@ -210,6 +210,7 @@ Isso eleva exponencialmente a conversão, pois a Rafaela já recebe a mensagem s
 | **"Falar sobre Funcional"** | `serviceFuncional` | *"Olá Rafaela! Gostaria de mais informações sobre as aulas de Treinamento Funcional com você."* |
 | **"Falar sobre Treino Online"** | `serviceTreinoOnline` | *"Olá Rafaela! Gostaria de entender como funciona a sua consultoria e acompanhamento de Treino Online."* |
 | **"Falar sobre Hábitos Saudáveis"** | `serviceAlimentacao` | *"Olá Rafaela! Vi a abordagem sobre hábitos saudáveis e gostaria de conversar sobre alinhamento de rotina e treino."* |
+| **"Enviar dados para o WhatsApp"** (Formulário) | `handleLeadFormSubmit` | *"Olá Rafaela! Preenchi o formulário no seu site com meus dados: [Nome, WhatsApp, Objetivo, Frequência, Mensagem]"* |
 | **Botão Flutuante** | `default` | *"Olá Rafaela! Vi seu site e gostaria de saber mais sobre o acompanhamento de Personal Trainer."* |
 
 ---

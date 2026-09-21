@@ -37,12 +37,53 @@
     window.open(url, '_blank', 'noopener,noreferrer');
   }
 
+  /**
+   * Captura os dados do formulário de contato e encaminha mensagem formatada ao WhatsApp
+   * @param {Event} event 
+   */
+  function handleLeadFormSubmit(event) {
+    if (event) event.preventDefault();
+
+    const form = document.getElementById('lead-form');
+    if (!form) return;
+
+    const nameInput = document.getElementById('lead-name');
+    const phoneInput = document.getElementById('lead-phone');
+    const goalSelect = document.getElementById('lead-goal');
+    const freqSelect = document.getElementById('lead-frequency');
+    const msgInput = document.getElementById('lead-message');
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const phone = phoneInput ? phoneInput.value.trim() : '';
+    const goal = goalSelect ? goalSelect.options[goalSelect.selectedIndex].text : '';
+    const frequency = freqSelect ? freqSelect.options[freqSelect.selectedIndex].text : '';
+    const customMessage = msgInput ? msgInput.value.trim() : '';
+
+    if (!name || !phone) {
+      alert('Por favor, preencha seu nome e WhatsApp.');
+      return;
+    }
+
+    let formattedMessage = `Olá Rafaela! Preenchi o formulário no seu site com meus dados:\n\n` +
+      `👤 *Nome:* ${name}\n` +
+      `📱 *WhatsApp:* ${phone}\n` +
+      `🎯 *Objetivo:* ${goal}\n` +
+      `📅 *Frequência Desejada:* ${frequency}`;
+
+    if (customMessage) {
+      formattedMessage += `\n💬 *Mensagem:* ${customMessage}`;
+    }
+
+    openWhatsApp(formattedMessage);
+  }
+
   // Exporta globalmente para fácil acesso nos templates e botões
   window.openWhatsApp = openWhatsApp;
   window.buildWhatsAppUrl = buildWhatsAppUrl;
+  window.handleLeadFormSubmit = handleLeadFormSubmit;
 
   /**
-   * Inicializa ouvintes para elementos declarativos que utilizam data-whatsapp-msg
+   * Inicializa ouvintes para elementos declarativos e formulário de contato
    */
   document.addEventListener('DOMContentLoaded', function () {
     const triggers = document.querySelectorAll('[data-whatsapp-msg]');
@@ -55,5 +96,11 @@
         openWhatsApp(msgKey);
       });
     });
+
+    // Ouvinte para envio do formulário de contato preliminar
+    const leadForm = document.getElementById('lead-form');
+    if (leadForm) {
+      leadForm.addEventListener('submit', handleLeadFormSubmit);
+    }
   });
 })();
