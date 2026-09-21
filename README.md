@@ -201,6 +201,15 @@ Isso eleva exponencialmente a conversão, pois a Rafaela já recebe a mensagem s
 | **"Quero esse combo"** (2x/sem) | `combo2x` | *"Olá Rafaela! Vi o combo de 2x por semana e gostaria de saber mais sobre horários e disponibilidade."* |
 | **"Quero o Plano Performance"** | `monthlyPerformance`| *"Olá Rafaela! Tenho interesse no Plano Performance (3x por semana com aplicativo exclusivo) e gostaria de saber como funciona."* |
 | **"Quero o Plano Equilíbrio"** | `monthlyEquilibrium`| *"Olá Rafaela! Tenho interesse no Plano Equilíbrio (2x por semana com aplicativo exclusivo) e gostaria de saber como funciona."* |
+| **"Falar sobre Personal"** | `servicePersonal` | *"Olá Rafaela! Gostaria de saber mais sobre o atendimento individual de Personal Trainer e sua disponibilidade de horários."* |
+| **"Falar sobre Emagrecimento"** | `serviceEmagrecimento` | *"Olá Rafaela! Gostaria de saber mais sobre o treinamento focado em Emagrecimento e composição corporal."* |
+| **"Falar sobre Hipertrofia"** | `serviceHipertrofia` | *"Olá Rafaela! Gostaria de saber mais sobre os treinos voltados para Hipertrofia e ganho de massa muscular."* |
+| **"Falar sobre Condicionamento"** | `serviceCondicionamento` | *"Olá Rafaela! Gostaria de informações sobre o treino para melhora do Condicionamento Físico e resistência."* |
+| **"Falar sobre Gestantes"** | `serviceGestantes` | *"Olá Rafaela! Tenho interesse no treinamento adaptado e seguro para Gestantes. Gostaria de entender como funciona."* |
+| **"Falar sobre Melhor Idade"** | `serviceMelhorIdade` | *"Olá Rafaela! Gostaria de saber mais sobre o acompanhamento personalizado para a Melhor Idade."* |
+| **"Falar sobre Funcional"** | `serviceFuncional` | *"Olá Rafaela! Gostaria de mais informações sobre as aulas de Treinamento Funcional com você."* |
+| **"Falar sobre Treino Online"** | `serviceTreinoOnline` | *"Olá Rafaela! Gostaria de entender como funciona a sua consultoria e acompanhamento de Treino Online."* |
+| **"Falar sobre Hábitos Saudáveis"** | `serviceAlimentacao` | *"Olá Rafaela! Vi a abordagem sobre hábitos saudáveis e gostaria de conversar sobre alinhamento de rotina e treino."* |
 | **Botão Flutuante** | `default` | *"Olá Rafaela! Vi seu site e gostaria de saber mais sobre o acompanhamento de Personal Trainer."* |
 
 ---

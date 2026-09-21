@@ -453,6 +453,35 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   line-height: 1.6;
+  margin-bottom: var(--space-6);
+  flex-grow: 1;
+}
+
+.service-btn {
+  width: 100%;
+  margin-top: auto;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  border-color: var(--color-border);
+  gap: var(--space-2);
+}
+
+.service-btn .btn-icon {
+  color: var(--color-whatsapp);
+  width: 1rem;
+  height: 1rem;
+  transition: color var(--transition-fast);
+}
+
+.service-btn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.service-btn:hover .btn-icon {
+  color: #ffffff;
 }
 
 /* ==========================================================================

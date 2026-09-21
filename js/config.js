@@ -95,7 +95,17 @@ const SITE_CONFIG = {
     app: "Olá Rafaela! Gostaria de saber mais sobre os planos mensais que incluem o aplicativo exclusivo de acompanhamento.",
     specialPrograms: "Olá Rafaela! Gostaria de entender mais sobre os programas de treinamento adaptados ao meu momento de vida.",
     nutrition: "Olá Rafaela! Vi no site o foco em hábitos saudáveis e gostaria de iniciar meu acompanhamento com você.",
-    finalCta: "Olá Rafaela! Estou pronto(a) para começar a treinar e quero encontrar a melhor opção para meus objetivos."
+    finalCta: "Olá Rafaela! Estou pronto(a) para começar a treinar e quero encontrar a melhor opção para meus objetivos.",
+    // Mensagens contextuais por modalidade/serviço
+    servicePersonal: "Olá Rafaela! Gostaria de saber mais sobre o atendimento individual de Personal Trainer e sua disponibilidade de horários.",
+    serviceEmagrecimento: "Olá Rafaela! Gostaria de saber mais sobre o treinamento focado em Emagrecimento e composição corporal.",
+    serviceHipertrofia: "Olá Rafaela! Gostaria de saber mais sobre os treinos voltados para Hipertrofia e ganho de massa muscular.",
+    serviceCondicionamento: "Olá Rafaela! Gostaria de informações sobre o treino para melhora do Condicionamento Físico e resistência.",
+    serviceGestantes: "Olá Rafaela! Tenho interesse no treinamento adaptado e seguro para Gestantes. Gostaria de entender como funciona.",
+    serviceMelhorIdade: "Olá Rafaela! Gostaria de saber mais sobre o acompanhamento personalizado para a Melhor Idade.",
+    serviceFuncional: "Olá Rafaela! Gostaria de mais informações sobre as aulas de Treinamento Funcional com você.",
+    serviceTreinoOnline: "Olá Rafaela! Gostaria de entender como funciona a sua consultoria e acompanhamento de Treino Online.",
+    serviceAlimentacao: "Olá Rafaela! Vi a abordagem sobre hábitos saudáveis e gostaria de conversar sobre alinhamento de rotina e treino."
   }
 };
 
